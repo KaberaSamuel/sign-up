@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray: rgb(163, 158, 158);
+  --bg: rgba(65, 65, 90, 0.9);
+}
+
+body {
+  /* border: green 3px solid; */
+  background-color: var(--bg);
+  color: antiquewhite;
+  font-size: 1.2rem;
+  box-sizing: content-box;
+  text-align: center;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+input {
+  background-color: var(--bg);
+  border: none;
+  /* height: 20px; */
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+main {
+  /* border: red 1px solid; */
+  width: 70vw;
+  height: 100vh;
+  margin: 10vh auto;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(32, 32, 32, 0.8);
+  display: flex;
+  justify-content: space-between;
+}
+
+main > div {
+  flex: 1 1 auto;
+  /* border: red 1px solid; */
+  width: 50%;
+}
+
+.left {
+  border-radius: 10px;
+  background: url(images/landscape-background.jpg) center no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.right {
+  padding: 40px 50px;
+  text-align: left;
+}
+
+.right > div:first-child p {
+  font-size: 1rem;
+  margin: 10px 0 20px;
+  color: var(--gray);
+}
+
+.inline-link {
+  text-decoration: underline;
+  color: rgb(139, 139, 208);
+}
+
+form {
+  /* border: red 1px solid; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div:first-child {
+  display: flex;
+  gap: 15px;
+}
+
+.check-div {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.check-div input {
+  width: 20px;
+}
+
+form button {
+  width: 100%;
+  background-color: rgb(98, 98, 166);
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.line {
+  /* border: yellow 1px solid; */
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--gray);
+  gap: 5px;
+}
+
+.line div {
+  height: 1px;
+  margin-top: 3px;
+  background-color: var(--gray);
+  flex: 1 1 auto;
+}
+
+.bottom div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom div:last-child div {
+  border: whitesmoke;
+  border-radius: 10px;
+}
