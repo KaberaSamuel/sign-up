@@ -33,7 +33,7 @@ h1 {
 input {
   background-color: var(--bg);
   border: none;
-  /* height: 20px; */
+  color: white;
   padding: 10px;
   border-radius: 5px;
   width: 100%;
@@ -141,9 +141,25 @@ form button {
 .bottom div:last-child {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
-.bottom div:last-child div {
-  border: whitesmoke;
+.account {
+  border: whitesmoke solid 1px;
   border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5px;
+  align-items: center;
+}
+
+/* .account:last-child {
+  justify-content: cp;
+} */
+
+.account * {
+  border: red 1px solid;
+  margin: 0;
 }
