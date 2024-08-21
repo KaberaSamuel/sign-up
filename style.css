@@ -10,10 +10,9 @@
 }
 
 body {
-  /* border: green 3px solid; */
   background-color: var(--bg);
   color: antiquewhite;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   box-sizing: content-box;
   text-align: center;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -34,35 +33,40 @@ input {
   background-color: var(--bg);
   border: none;
   color: white;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 10px;
   width: 100%;
+  margin-bottom: 8px;
 }
 
 main {
-  /* border: red 1px solid; */
-  width: 70vw;
-  height: 100vh;
+  width: 90vw;
+  height: 120vh;
   margin: 10vh auto;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
   background-color: rgba(32, 32, 32, 0.8);
   display: flex;
   justify-content: space-between;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.505);
 }
 
 main > div {
   flex: 1 1 auto;
-  /* border: red 1px solid; */
   width: 50%;
 }
 
 .left {
   border-radius: 10px;
-  background: url(images/landscape-background.jpg) center no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(images/landscape-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px 15px;
 }
 
 .left nav {
@@ -71,14 +75,42 @@ main > div {
   padding: 15px 20px;
 }
 
+nav a {
+  font-size: 1.1rem;
+  background-color: rgba(199, 199, 199, 0.2);
+  padding: 5px 15px 8px;
+  border-radius: 20px;
+}
+
+.sticks {
+  margin: 15px 0;
+}
+
+.sticks button {
+  height: 5px;
+  width: 50px;
+  border-radius: 5px;
+  margin: 0 3px;
+  border: none;
+  background-color: var(--gray);
+}
+
+.sticks button:last-child {
+  background-color: white;
+}
+
 .right {
-  padding: 40px 50px;
+  padding: 60px;
   text-align: left;
 }
 
-.right > div:first-child p {
+.right > * {
+  margin-bottom: 30px;
+}
+
+.title p {
   font-size: 1rem;
-  margin: 10px 0 20px;
+  margin: 20px 0 40px;
   color: var(--gray);
 }
 
@@ -88,7 +120,6 @@ main > div {
 }
 
 form {
-  /* border: red 1px solid; */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -103,17 +134,20 @@ form div:first-child {
   display: flex;
   gap: 10px;
   font-size: 0.8rem;
+  margin: 10px 0 20px;
 }
 
 .check-div input {
   width: 20px;
+  height: 20px;
+  border-radius: 5px;
 }
 
 form button {
   width: 100%;
   background-color: rgb(98, 98, 166);
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   color: white;
   font-size: 1rem;
   border: none;
@@ -121,7 +155,6 @@ form button {
 }
 
 .line {
-  /* border: yellow 1px solid; */
   margin: 20px 0;
   display: flex;
   justify-content: center;
@@ -150,16 +183,15 @@ form button {
   width: 100%;
   height: 50px;
   display: flex;
-  /* justify-content: space-between; */
-  gap: 5px;
+  justify-content: center;
   align-items: center;
 }
 
-/* .account:last-child {
-  justify-content: cp;
-} */
+.account a {
+  margin: auto;
+  font-size: 1rem;
+}
 
-.account * {
-  border: red 1px solid;
-  margin: 0;
+.account i {
+  font-size: 1.2rem;
 }
